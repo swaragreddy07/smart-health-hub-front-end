@@ -1,0 +1,194 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.container {
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 12rem;
+}
+
+.h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+}
+
+.ul,
+.each {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  flex-direction: row;
+  background-color: #57c95b;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.li {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.li:first-child {
+  flex: 2;
+}
+
+.li:not(:first-child) {
+  flex: 1;
+}
+
+.content {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+}
+
+.each {
+  background-color: #e8ebe89f;
+}
+
+.button {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.buttton_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  flex: 1;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.name:first-child {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.name:not(:first-child) {
+  flex: 1;
+}
+
+.name:not(:last-child) {
+  border-right: solid rgb(212, 207, 207);
+}
+
+.description {
+  opacity: 0.5;
+}
+
+.content:hover {
+  transform: scale(1.05);
+}
+
+.p {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .p {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .h1 {
+    font-size: 1.7rem;
+  }
+  .input {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .h1 {
+    font-size: 1.7rem;
+  }
+  .input {
+    font-size: 0.8rem;
+  }
+  .name:not(:last-child) {
+    border-bottom: solid rgb(212, 207, 207);
+    border-right: none;
+    width: 100%;
+  }
+  .each {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 250px) {
+  .button {
+    font-size: 1rem;
+  }
+
+  .li {
+    font-size: 0.7rem;
+  }
+
+  .p {
+    font-size: 0.6rem;
+  }
+
+  .description {
+    font-size: 0.6rem;
+  }
+
+  .name {
+    font-size: 0.6rem;
+  }
+
+  .h1 {
+    font-size: 1.4rem;
+  }
+}

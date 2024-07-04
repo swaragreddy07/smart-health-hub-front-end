@@ -1,0 +1,195 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.aboutSection {
+  margin: 3.5rem;
+}
+
+.h1 {
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+.introduction {
+  line-height: 1.4;
+}
+
+.h3,
+.p {
+  margin-bottom: 2rem;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #d1c7c7;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.story {
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.button {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.4rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.testimonials {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-template-rows: repeat(2, 15rem);
+  gap: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b2b1b1;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 8px;
+  height: fit-content;
+  color: white;
+  padding: 20px;
+}
+
+.card1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  background-color: hsl(263, 55%, 52%);
+}
+.card2 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  background-color: hsl(217, 19%, 35%);
+}
+.card3 {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #007bff;
+}
+.card4 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.h3 {
+  margin-bottom: 0;
+}
+.firstSection,
+.secondSection,
+.thirdSection {
+  margin-bottom: 10px;
+}
+
+.firstSection {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.secondSection {
+  font-size: 0.8rem;
+}
+
+.thirdSection {
+  font-size: 0.8rem;
+}
+
+@media(max-width: 1030px){
+  .testimonials {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  
+  .card2{
+    grid-column: 1/ span 3;
+    grid-row: 3 / span 1;
+  }
+}
+
+@media(max-width: 650px){
+  .h3{
+    font-size: 1rem;
+  }
+
+  .p{
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 810px){
+  .testimonials {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+}
+  @media(max-width: 770px){
+    .testimonials {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(4, auto);
+    }
+  
+    .card1 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+    }
+    .card2 {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+    }
+    .card3 {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
+    }
+    .card4 {
+      grid-column: 1 / span 2;
+      grid-row: 4 / span 1;
+    }
+  
+  }
+  
+  @media(max-width: 680px){
+    .h2{
+       font-size: 1rem;
+    }
+    
+  }
+
+
+
+  @media(max-width: 370px){
+    .h2{
+       font-size: 0.8rem;
+    }
+    
+    .h1{
+      font-size:1.6rem;
+    }
+
+    .p{
+      font-size: 0.8rem;
+    }
+
+    .h3{
+      font-size: 0.9rem;
+    }
+  }

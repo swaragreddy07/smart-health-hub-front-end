@@ -1,0 +1,107 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: white;
+  border: 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 35%;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.4rem;
+}
+
+.textBox {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+@media (max-width: 850px) {
+  .content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 430px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    width: 80%;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .p {
+    font-size: 0.8rem;
+  }
+  .label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 180px) {
+  .content {
+    width: 90%;
+  }
+  .title {
+    font-size: 0.7rem;
+  }
+  .p {
+    font-size: 0.6rem;
+  }
+  .label {
+    font-size: 0.6rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}

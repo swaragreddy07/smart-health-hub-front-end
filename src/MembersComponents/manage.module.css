@@ -1,0 +1,44 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.conatiner{
+  display: flex;
+  flex-direction: column;
+}
+
+.Container{
+  flex-direction: row;
+}
+
+
+.radio {
+  display: none;
+}
+
+.label {
+
+  color: #016acc;
+  border: 2px solid #016acc ;
+
+}
+
+.label:before {
+  border: 3px solid #016acc;
+  margin-right: 8rem;
+}
+
+.Container input[type="radio"]:checked + .label {
+  background-color: #016acc;
+}
+
+.Container input[type="radio"]:checked + .label:before {
+  background-color: #016acc;
+}
+
+.table_header{
+  background-color: rgb(89, 0, 255);
+}

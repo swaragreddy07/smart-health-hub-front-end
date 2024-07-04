@@ -1,0 +1,139 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+  color: red;
+}
+.message {
+  text-align: center;
+  color: red;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.p {
+  margin-bottom: 0.6rem;
+}
+.submitP {
+  width: 90%;
+  text-align: center;
+}
+.button,
+.Button {
+  background-color: red;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  border: none;
+  margin-right: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.Button {
+  transition: none;
+  opacity: 0.7;
+  cursor: default;
+}
+
+.submit {
+  background-color: #0d6efd;
+  margin-top: 1rem;
+  justify-self: center;
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+.submit:hover {
+  background-color: #0548ab;
+}
+
+.button:hover {
+  background-color: rgb(159, 4, 4);
+}
+
+.symptoms {
+  width: 35%;
+}
+
+.delete {
+  position: relative;
+  display: inline-block;
+}
+.close {
+  height: 0.9rem;
+  width: 0.9rem;
+  cursor: pointer;
+  position: absolute;
+  top: -1px;
+  right: 5px;
+}
+
+@media(max-width:950px){
+  .symptoms{
+    width: 40%;
+  }
+}
+
+@media (max-width: 835px) {
+  .start {
+    flex-direction: column;
+  }
+  .submit {
+    width: 30%;
+  }
+  .symptoms {
+    width: 85%
+  }
+}
+
+@media (max-width: 335px) {
+  .submit {
+    width: 60%;
+  }
+  .symptoms {
+    width: 95%;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .message {
+    font-size: 0.8rem;
+  }
+  .img {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  .button,
+  .Button,
+   .submit{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 250px){
+  .submit{
+    width: 70%;
+  }
+}

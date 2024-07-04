@@ -1,0 +1,165 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.intro,
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.h1 {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 1.4rem;
+}
+
+.p {
+  text-align: center;
+  width: 60%;
+  margin-top: 1.2rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+.bodySection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 23rem;
+  width: 23rem;
+}
+
+.content {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  right: 7%;
+}
+
+.imgContainer {
+  width: 50%;
+  text-align: center;
+}
+
+.contentP {
+  text-align: center;
+}
+
+.contentH {
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.one {
+  margin-bottom: 2rem;
+}
+
+.h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Button {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 955px) {
+  .bodySection {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .content {
+    right: 0%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .contentH {
+    font-size: 1.2rem;
+  }
+
+  .p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .contentP {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contentH {
+    font-size: 1rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .img {
+    height: 14rem;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .titleH {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 255px) {
+  .titleH {
+    font-size: 1.3rem !important;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .img {
+    height: 12rem;
+    width: 12rem;
+  }
+}

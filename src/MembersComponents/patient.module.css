@@ -1,0 +1,95 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.update, .delete, .save{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update:hover {
+background-color: rgb(6, 153, 70);
+}
+.date, .time{
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #f2f2f2ed;
+}
+.save{
+  background-color: rgb(33, 160, 224);
+}
+
+.save:hover{
+  background-color: rgb(14, 41, 216);
+}
+
+
+.delete{
+  background-color: rgb(245, 44, 74);
+}
+
+.delete:hover{
+  background-color: rgb(216, 14, 44);
+}
+
+/* Table container */
+.table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+/* Table header */
+.table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Table rows */
+.table td, .table th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+/* Alternate row color */
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+
+
+
+.h3{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.p{
+  text-align: center;
+  color: red;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

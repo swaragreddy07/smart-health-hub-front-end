@@ -1,0 +1,624 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  font-weight:300;
+  padding: 0 100px;
+}
+
+
+
+a.active,a:hover{
+  background:#1b9bff;
+  transition: 0.5s;
+}
+@media screen and (max-width: 500px) {
+  .nav a{
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  
+}
+img{
+ max-width: 100%;
+  position: absolute;
+  height: 100%;
+  background-position: center;
+  background-size: cover ;
+  position: relative;
+}
+.img ::before{
+  content:'';
+  position: absolute;
+  height:100%;
+  width:100%;
+  background: rgba(0,0,0,0.4);
+}
+.hero-section{
+  position:absolute;
+  top:30%;
+  left:10%;
+  height: 100vh;
+  width:50%;
+  background-position: center;
+  background-size:cover;
+  display: flex;
+  padding: 0 2px;
+}
+.hero-section .content{
+  max-width: 1200px;
+margin: 0 auto;
+width: 100%;
+color: #131212;
+}
+.hero-section .content h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+.hero-section .content button {
+  background: #7b80e6;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.hero-section .content button:hover {
+  color: #fff;
+  background: #C06B3E;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin:8cqb;
+  text-align: center;
+  background-color:  #1b9bff;
+  color:white;
+  display:inline-block;
+  padding:  10px 10px 10px 10px;
+  border:1px solid #ccc;
+  font-style:oblique;
+}
+.card h3{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card p{
+  margin-bottom: 15px;
+  margin-top: 15px    ;
+}
+.btn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(12, 12, 12);
+  background-color:white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 30px;
+
+}
+.btn:hover{
+  opacity: 0.7;
+}
+.footer{
+  top: 250%;
+  color:#ccc;
+   background-color: #131212;
+  border-radius: 10px;
+  margin-top: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer .footer-row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding:50px;
+
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Increased padding for better spacing */
+  background-image: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient from blue to purple */
+  color: #fff; /* White text color */
+}
+
+.logo {
+ height: 3rem;
+ width: 3rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin-right: 30px; /* Increased margin between navigation links */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Increased font size for navigation links */
+  font-weight: bold; /* Make the navigation links bold */
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  color: #ccc; /* Lighter color on hover */
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient from blue to purple */
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff; /* White border below each link */
+    padding-bottom: 5px; /* Space between link text and border */
+    text-align: center; /* Center link text */
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px; /* Adjust the top position for better alignment */
+    right: 20px; /* Adjust the right position for better alignment */
+    font-size: 1.5rem; /* Increased font size for the menu toggle */
+  }
+}
+.hero {
+  background-image: url('https://img.freepik.com/free-photo/tracking-computing-talk-lens-flare-close-up_1134-674.jpg?t=st=1709812966~exp=1709816566~hmac=8df8e5afe195758c66755ae8f5cb57291db70d2a630c9ca1d83498a3d191473e&w=996');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Services section styles */
+/* Services section styles */
+.services {
+  margin: 40px 0;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.services li {
+  text-align: center;
+}
+
+.services li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.services li p {
+  font-size: 1.2rem;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .services ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services li {
+    margin-bottom: 20px;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Column styles */
+.item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* About section styles */
+.about {
+  margin: 40px 0;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+/* Image gallery styles */
+/* Image gallery styles */
+/* Image gallery styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*  */
+/* Services section styles */
+.services1 {
+  margin: 40px 0;
+}
+
+.services1 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+.services1 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+.services1 li {
+  text-align: center;
+  flex: 0 1 calc(30% - 20px); /* Three items in a row with 20px margin */
+  margin: 10px; /* Space between items */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.services1 li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.services1 li p {
+  font-size: 1.2rem;
+}
+.contact-us {
+  padding: 40px 0;
+}
+
+.contact-us .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form-container {
+  flex: 1;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+/* ContactUsPage.css */
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* PatientSymptomchecker.css */
+
+/* .select-container {
+  position: relative;
+  margin-bottom: 20px;
+} */
+
+ select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent interaction with pseudo-element */
+}
+.health-records-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+/* Styles for PharmacyMedicationDispensation component */
+.pharmacy-medication-dispensation {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.prescriptions {
+  margin-bottom: 20px;
+}
+
+.prescriptions h2 {
+  margin-bottom: 10px;
+}
+
+.prescriptions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prescriptions li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.prescriptions li button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dispensed-medications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dispensed-medications li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .prescriptions li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prescriptions li button {
+    align-self: flex-start;
+  }
+
+  .dispensed-medications li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.card {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.data-section {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-section h2 {
+  margin-top: 0;
+}
+
+.data-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-section li {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}

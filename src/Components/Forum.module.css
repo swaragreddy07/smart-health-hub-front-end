@@ -1,0 +1,405 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.intro{
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center; 
+  align-items: center;
+  gap: 2rem;
+}
+
+.p{
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.select{
+  width: auto;
+  border-radius: 15px;
+  padding: 8px 4px;
+  appearance: auto;
+}
+.h1{
+  font-size: 2rem; 
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sort{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button, .comment_button, .opinion button, .delete,.update, .comment_delete, .comment_update, .comment_edit{
+  background-color: rgb(58, 123, 236);
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  border: none;
+}
+
+.button:hover,.comment_button:hover {
+  background-color: rgb(12, 2, 146);
+}
+
+.delete, .comment_delete{
+  background-color: rgb(239, 6, 60);
+}
+
+.delete:hover, .comment_delete:hover {
+  background-color: rgb(165, 1, 1);
+}
+.update, .comment_update, .comment_edit{
+  background-color: rgb(6, 239, 72);
+}
+
+.update:hover, .comment_update:hover, .comment_edit:hover {
+  background-color: rgb(2, 129, 29);
+}
+.comment_edit{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.edit_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.comment_delete, .comment_update, .comment_edit{
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.para{
+  margin: 0;
+}
+
+.profile{
+  height: 3rem;
+  width: 3rem;
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.role, .name{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.name{
+  opacity: 0.6;
+}
+
+.h2{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.title{
+  margin-top: 1rem;
+}
+
+.contentP{
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.like{
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.images{
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.images:hover{
+  transform: scale(1.2);
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.commentP{
+  font-size: 1.3rem;
+}
+
+.comment{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comment_button{
+  width: 4rem;
+  align-self: center;
+  margin-top: 1rem;
+  padding: 7px;
+}
+
+.post_comment{
+  padding: 6px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opinion input[type="text"],
+.opinion textarea {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.opinion button {
+  background-color: #4CAF50;
+}
+
+.opinion button:hover {
+  background-color: #308d35;
+}
+
+
+@media(max-width: 670px){
+  .h1{
+    font-size: 1.6rem;
+  }
+  .button{
+    font-size: 0.8rem;
+  }
+  .name{
+    font-size: 0.8rem;
+  }
+
+  .role{
+    font-size: 0.8rem;
+  }
+
+  .para{
+    font-size: 0.8rem;
+  }
+  .profile{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .h2{
+  
+    font-size: 1rem;
+  }
+
+  .contentP{
+    font-size: 0.9rem;
+  }
+  .comment_button{
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+
+  .comment_delete, .comment_update, .comment_edit{
+    font-size: 0.5rem;
+  }
+  .delete, .update{
+    font-size: 0.8rem;
+  }
+  .opinion button{
+    font-size: 0.8rem;
+  }
+}
+
+
+@media(max-width: 530px){
+  .h1{
+    font-size: 1.4rem;
+  }
+  .button{
+    font-size: 0.6rem;
+  }
+  .name{
+    font-size: 0.7rem;
+  }
+
+  .role{
+    font-size: 0.7rem;
+  }
+
+  .para{
+    font-size: 0.7rem;
+  }
+  .profile{
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+
+  .h2{
+  
+    font-size: 0.9rem;
+  }
+
+  .contentP{
+    font-size: 0.8rem;
+  }
+  .comment_button{
+    width: 2.7rem;
+    font-size: 0.6rem;
+  }
+
+  .comment_delete, .comment_update, .comment_edit{
+    font-size: 0.5rem;
+  }
+  .delete, .update{
+    font-size: 0.6rem;
+  }
+  .opinion button{
+    font-size: 0.6rem;
+  }
+}
+
+@media(max-width: 460px){
+  .h1{
+    font-size: 1.3rem;
+  }
+  .button{
+    font-size: 0.6rem;
+  }
+  .name{
+    font-size: 0.7rem;
+  }
+
+  .role{
+    font-size: 0.6rem;
+  }
+
+  .para{
+    font-size: 0.7rem;
+  }
+  .profile{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .h2{
+  
+    font-size: 0.8rem;
+  }
+
+  .contentP{
+    font-size: 0.7rem;
+  }
+  .comment_button{
+    width: 3rem;
+    font-size: 0.6rem;
+  }
+
+  .comment_delete, .comment_update, .comment_edit{
+    font-size: 0.5rem;
+  }
+  .delete, .update{
+    font-size: 0.6rem;
+  }
+  .opinion button{
+    font-size: 0.6rem;
+  }
+}
+
+@media(max-width:400px){
+  .heading{
+    flex-direction: column;
+  }
+
+}
+
+@media(max-width:350px){
+  .h1{
+    font-size: 1.1rem;
+  }
+  .button{
+    font-size: 0.5rem;
+  }
+  .opinion button{
+    font-size: 0.6rem;
+  }
+  .comment_button{
+    width: 2.5rem;
+    font-size: 0.5rem;
+  }
+
+  .comment_delete, .comment_update, .comment_edit{
+    font-size: 0.4rem;
+  }
+  .delete, .update{
+    font-size: 0.5rem;
+  }
+}
+
+@media(max-width:320px){
+  .like{
+    flex-direction: column;
+  }
+  .post_comment{
+    font-size: 0.7rem;
+  }
+  .input{
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,127 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.h1 {
+  font-size: 2.5rem;
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Set the text color */
+  text-align: center; /* Center align the text */
+  margin-top: 20px; /* Add some top margin */
+  margin-bottom: 20px; /* Add some bottom margin */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add a subtle text shadow */
+  color: rgb(0, 162, 255);
+}
+
+.chart {
+  width: 30rem;
+}
+
+.container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.h3,
+.h4 {
+  color: #ec6161; /* Red color shade */
+  font-size: 1.3rem; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Convert text to uppercase */
+  margin-bottom: 1rem; /* Add bottom margin */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.h4 {
+  color: rgb(0, 221, 255);
+}
+
+.h2 {
+  color: #2ecc71; /* Nice green color */
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 2rem; /* Add some bottom margin */
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  position: relative;
+  color: #01cc65;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: 2px solid #01cc65;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid #01cc65;
+  border-radius: 50%;
+  margin-right: 7rem;
+}
+
+.Container input[type="radio"]:checked + .label {
+  background-color: #01cc65;
+  color: white;
+}
+
+.Container input[type="radio"]:checked + .label:before {
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid white;
+  background-color: #01cc65;
+}
+
+
+.H1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px;
+  font-size: 2rem;
+}
+
+
+.update, .delete {
+  white-space: nowrap;
+  margin-top: 1rem;
+}
+
+@media(max-width: 990px){
+  .container{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,216 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.body {
+    background-image: url("../assets/sign_up.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .signUp {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .formContent {
+    background-color: white;
+    border: 1px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 60%;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    background-color: #0d6efd;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    display: grid;
+    grid-template-rows: repeat(4, fit-content);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+  
+  .one {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  
+  .two {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+  
+  .three {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .four {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+  .five {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+  
+  .nine {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+  }
+  
+  .six {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .seven {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+  }
+  
+  .button {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 2;
+    margin-top: 2rem;
+    background-color: rgb(84, 213, 84);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: rgb(2, 146, 2);
+  }
+  
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .five {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textbox {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .genderLabel {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .genderinput {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .radioinput {
+    margin-right: 0.4rem;
+  }
+  
+  .p {
+    color: red;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 880px) {
+    .formContent {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .formContent {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .formContent {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form {
+      display: grid;
+      grid-template-rows: repeat(9, fit-content);
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+    }
+    .one {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+    }
+  
+    .two {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+  
+    .three {
+      grid-row: 3 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .four {
+      grid-row: 4 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .five {
+      grid-row: 5 / span 1;
+      grid-column: 1 / span 1;
+    }
+  
+    .nine {
+      grid-row: 6 / span 1;
+      grid-column: 1 / span 1;
+    }
+  
+    .six {
+      grid-row: 7 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .seven {
+      grid-row: 8 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .button {
+      grid-row: 9 / span 1;
+      grid-column: 1 / span 1;
+    }
+    .textbox {
+      width: 100%;
+    }
+  }
+  

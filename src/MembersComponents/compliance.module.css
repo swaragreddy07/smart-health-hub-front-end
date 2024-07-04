@@ -1,0 +1,32 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.heading{
+  color: rgb(14, 195, 227);
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Increase letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  transition: color 0.3s ease-in-out; /* Add smooth color transition */
+}
+
+.heading:hover {
+  color: rgb(0, 158, 204); 
+}
+.update, .delete{
+  margin-top: 1rem;
+}
+.table_header{
+  background-color: rgb(210, 16, 249);
+}
+
+.textarea{
+  width: 100%;
+}
+
+.description, .name{
+  word-wrap: break-word;
+}

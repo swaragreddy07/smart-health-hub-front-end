@@ -1,0 +1,44 @@
+
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.h1 {
+  color: #0a40b5; /* Change the color to a desired color */
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing for a stylish look */
+}
+
+.tableContainer {
+  margin: 0 auto; /* Center the table horizontally */
+  max-width: 75rem; /* Set a maximum width for the table */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd; /* Add a border around the table */
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add a bottom border to table cells */
+}
+
+.table th {
+  background-color: #f2f2f2; /* Gray background color for table headers */
+}
+
+.tableRow:hover {
+  background-color: #f2f2f2; /* Highlight table row on hover */
+}

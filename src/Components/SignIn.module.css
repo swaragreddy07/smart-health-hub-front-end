@@ -1,0 +1,96 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.body {
+  background-image: url("../assets/login.jpg");
+}
+
+.signUp {
+  align-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, fit-content);
+}
+
+.one {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.two {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 1;
+}
+
+/* .button {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 1;
+  margin-top: 3rem;
+} */
+
+.textbox {
+  width: 100%;
+}
+
+.formContent {
+  width: 40%;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 850px) {
+  .formContent {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .formContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  .formContent {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .formContent {
+    width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .formContent {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .formContent {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+.p {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .signUp {
+    align-items: center;
+  }
+}

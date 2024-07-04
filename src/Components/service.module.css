@@ -1,0 +1,228 @@
+/*
+Kolli Syam Sravya - 1002173877
+Pennabadi Devipriyanka - 1002166708
+Pingili Swarag Reddy - 1002158023
+Rikkala Sai Maanasa - 1002147724
+Bathineni Vamsi - 1002118933
+*/
+.service {
+  background-color: white;
+  border: 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.h2 {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.span {
+  color: #a682e6;
+}
+.h1 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.pContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  width: 50%;
+}
+.one {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.two {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.three {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.four {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.five {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.six {
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.imgContainer {
+  height: 4rem;
+  width: 4rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: fit-content;
+  width: fit-content;
+}
+
+.services {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  row-gap: 2rem;
+  column-gap: 2rem !important;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 950px) {
+  .services {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    row-gap: 2rem;
+    column-gap: 2rem !important;
+  }
+  .three {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .four {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  .five {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .six {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+  }
+}
+
+@media (max-width: 630px) {
+  .services {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(1, auto);
+    row-gap: 2rem;
+    column-gap: 2rem !important;
+  }
+  .two {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .three {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .four {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .five {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .six {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .heading {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  .heading {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .h1 {
+    font-size: 1rem;
+  }
+
+  .h2 {
+    font-size: 0.8rem;
+  }
+
+  .p {
+    font-size: 0.8rem;
+  }
+  .service {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+@media (max-width: 270px) {
+  .heading {
+    width: 90%;
+    font-size: 0.7rem;
+  }
+
+  .h1 {
+    font-size: 1rem;
+  }
+
+  .h2 {
+    font-size: 0.7rem;
+  }
+
+  .p {
+    font-size: 0.7rem;
+  }
+  .service {
+    width: 13rem;
+    height: 12rem;
+  }
+}
